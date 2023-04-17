@@ -1,0 +1,143 @@
+.catalog-item-tabs {
+	margin-top: 40px;
+	padding-bottom: 40px;
+	&__list {
+		display: flex;
+		&-adv {
+			display: grid;
+			grid-template-columns: repeat(12, 1fr);
+			gap: 30px;
+		}
+	}
+	&__item {
+		position: relative;
+		&:not(:last-child) {
+			margin-right: 60px;
+			&::after {
+				content: "";
+				width: 1px;
+				height: 100%;
+				background-color: var(--dark-blue-color);
+				position: absolute;
+				right: -18%;
+				top: 0;
+			}
+		}
+		&-adv {
+			display: flex;
+			align-items: flex-start;
+			grid-column: 4 span;
+			&-bottom {
+				&:nth-child(even) {
+					grid-column: 8 span;
+				}
+			}
+		}
+	}
+	&__btn {
+		transition: color 0.3s ease;
+		&-active {
+			color: var(--light-blue-color);
+		}
+	}
+	&__content {
+		margin-top: 50px;
+		margin-bottom: 80px;
+	}
+	&__panel {
+		width: 100%;
+		display: none;
+		&-active {
+			display: block;
+		}
+	}
+	&__icon {
+		&-adv {
+			margin-right: 30px;
+			box-shadow: -84.8448px 61.8576px 80px rgba(0, 0, 0, 0.0285938),
+				-62.8129px 45.7949px 53.9219px rgba(0, 0, 0, 0.04875),
+				-44.9475px 32.7698px 34.875px rgba(0, 0, 0, 0.0632813),
+				-30.8699px 22.5062px 21.6406px rgba(0, 0, 0, 0.075),
+				-20.2011px 14.728px 13px rgba(0, 0, 0, 0.0867188),
+				-12.5626px 9.15897px 7.73438px rgba(0, 0, 0, 0.10125),
+				-7.57543px 5.523px 4.625px rgba(0, 0, 0, 0.121406),
+				-4.8609px 3.54392px 2.45312px rgba(0, 0, 0, 0.15);
+			border-radius: 15px;
+		}
+	}
+	&__text {
+		max-width: 255px;
+	}
+	&__title {
+		margin: 0;
+		margin-bottom: 30px;
+	}
+}
+
+@media (max-width: 1024px) {
+	.catalog-item-tabs {
+		& .container {
+			padding-left: 50px;
+			padding-right: 50px;
+		}
+		&__list {
+			justify-content: center;
+		}
+		&__btn {
+			font-size: 16px;
+			line-height: 20px;
+			white-space: nowrap;
+		}
+		&__item {
+			&:not(:last-child) {
+				margin-right: 50px;
+				&::after {
+					right: -23%;
+				}
+			}
+			&-adv {
+				&-bottom {
+					grid-column: 5 span;
+					&:nth-child(even) {
+						grid-column: 6 span;
+					}
+				}
+			}
+		}
+		&__text {
+			&-main {
+				max-width: 255px;
+			}
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.catalog-item-tabs {
+		&__btn {
+			font-weight: 600;
+			font-size: 13px;
+			line-height: 16px;
+		}
+		&__item {
+			grid-column: 6 span;
+			&-adv {
+				grid-column: 6 span;
+			}
+			&:not(:last-child) {
+				margin-right: 26px;
+				&::after {
+					right: -14px;
+				}
+			}
+		}
+		&__icon {
+			&-adv {
+				margin-right: 20px;
+			}
+		}
+		&__content {
+			margin-top: 30px;
+		}
+	}
+}

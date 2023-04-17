@@ -1,0 +1,43 @@
+// базовые подключения
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+
+// подключения компонентов страницы
+@import "./components/header";
+@import "./components/nav";
+@import "./components/title";
+@import "./components/button";
+@import "./components/path";
+@import "./components/main-hero";
+@import "./components/main-place";
+@import "./components/main-design";
+@import "./components/main-advantages";
+@import "./components/main-corpus";
+@import "./components/main-feedback";
+@import "./components/main-banner";
+@import "./components/main-map";
+@import "./components/catalog-item-hero";
+@import "./components/catalog-item-tabs";
+@import "./components/catalog-item-stuff";
+@import "./components/catalog-item-other";
+@import "./components/accordion";
+@import "./components/coop-hero";
+@import "./components/about-hero";
+@import "./components/about-vacancy";
+@import "./components/contacts-hero";
+@import "./components/news-hero";
+@import "./components/news-card";
+@import "./components/cleaning-hero";
+@import "./components/choose-hero";
+@import "./components/docs-hero";
+@import "./components/faq-hero";
+@import "./components/basket-hero";
+@import "./components/policy-hero";
+@import "./components/hero-404";
+@import "./components/quiz";
+@import "./components/footer";
+@import "./components/catalog-hero";
+@import "./components/up-button";
+@import "./components/search";

@@ -1,0 +1,12 @@
+import "./components/accordion";
+import "./components/radio-switch";
+import "./components/sliders";
+import "./components/maps";
+import "./components/tabs";
+import "./components/menu";
+import "./components/video-controller";
+import "./components/more-btn";
+import "./components/categories";
+import "./components/search-icons";
+import "./components/forms";
+import "./components/up-button";
